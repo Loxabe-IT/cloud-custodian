@@ -1,0 +1,6 @@
+- account_id: '594142824123'
+  email: e.shabi@loxabe-it.de
+  name: loxabe-environment
+  role: arn:aws:iam::594142824123:role/CloudCustodianAdmin
+  tags:
+  - path:/aws-im-ou

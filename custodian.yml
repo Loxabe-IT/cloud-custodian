@@ -1,0 +1,16 @@
+vars:
+  role: &rolex arn:aws:iam::{account_id}:role/CloudCustodianRole
+  tag: &owner exa:creator
+policies:
+- name: ec2-auto-tag-user
+  resource: ec2
+  mode:
+    type: cloudtrail
+    role: *rolex
+    events:
+      - RunInstances
+  filters:
+    - tag:*owner: absent
+  actions:
+    - type: auto-tag-user
+      tag: *owner

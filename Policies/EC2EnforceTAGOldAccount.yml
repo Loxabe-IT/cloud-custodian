@@ -1,0 +1,39 @@
+policies:
+
+- name: ec2-tag-compliance-mark
+  resource: ec2
+  comment: |
+    Find all (non-ASG) instances that are not compliant
+    to tagging policies, tag them for stoppage in 1 day,
+    and send a notification.
+  filters:
+    - "tag:aws:autoscaling:groupName": absent
+    - "tag:c7n_tag_compliance": absent
+    - or:
+      - "tag:exa:owner": absent
+      - "tag:exa:project": absent
+  mode:
+    schedule: "rate(30 minutes)"
+    type: periodic
+    role: arn:aws:iam::602894545240:role/CloudCustodianRole
+    execution-options:
+      output_dir: s3://exasolcloudcustodianold/CustodianLogs/
+  actions:
+    - type: mark-for-op
+      tag: c7n_tag_compliance
+      op: stop
+      days: 3
+    - type: notify
+      template: redefault.html
+      priority_header: '2'
+      subject: "[AWS Old Account] Untagged EC2 Instances in {{ region }}"
+      violation_desc: "The following EC2(s) are not tagged with exa:project and exa:owner tags and "
+      action_desc: have been marked for stoping</a>
+      questions_email: aws-admins@exasol.com
+      questions_slack: help-cloud
+      to:
+        - aws-users@exasol.com
+      transport:
+        type: sqs
+        queue: https://sqs.eu-west-1.amazonaws.com/602894545240/exasolcloudcustodiansqsold
+        region: eu-west-1    

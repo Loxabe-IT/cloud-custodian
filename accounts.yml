@@ -1,0 +1,164 @@
+ 
+accounts:
+- account_id: '298714265955'
+  email: aws-maintenance@exasol.com
+  name: AWS Maintenance
+  role: arn:aws:iam::298714265955:role/CloudCustodianAdminRole
+  tags:
+  - path:/
+- account_id: 029057036117
+  email: aws-se-test@exasol.com
+  name: aws-se-test
+  role: arn:aws:iam::029057036117:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-se-ou
+- account_id: 053655720805
+  email: aws-se-prod@exasol.com
+  name: aws-se-prod
+  role: arn:aws:iam::053655720805:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-se-ou
+- account_id: '944947170739'
+  email: aws-se-dev@exasol.com
+  name: aws-se-dev
+  role: arn:aws:iam::944947170739:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-se-ou
+- account_id: '922177738768'
+  email: aws-pmi-test@exasol.com
+  name: aws-pmi-test
+  role: arn:aws:iam::922177738768:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-pmi-ou
+- account_id: '216764142018'
+  email: aws-pmi-dev@exasol.com
+  name: aws-pmi-dev
+  role: arn:aws:iam::216764142018:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-pmi-ou
+- account_id: '580212897664'
+  email: aws-pmi-prod@exasol.com
+  name: aws-pmi-prod
+  role: arn:aws:iam::580212897664:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-pmi-ou
+- account_id: '916240634409'
+  email: aws-dev-dev@exasol.com
+  name: aws-dev-dev
+  role: arn:aws:iam::916240634409:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-dev-ou
+- account_id: '931829420206'
+  email: aws-dev-prod@exasol.com
+  name: aws-dev-prod
+  role: arn:aws:iam::931829420206:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-dev-ou
+- account_id: '352464002803'
+  email: aws-dev-test@exasol.com
+  name: aws-dev-test
+  role: arn:aws:iam::352464002803:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-dev-ou
+- account_id: '403728516237'
+  email: aws-dev-preprod@exasol.com
+  name: aws-dev-preprod
+  role: arn:aws:iam::403728516237:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-dev-ou
+- account_id: '688283867202'
+  email: aws-ui-dev@exasol.com
+  name: aws-ui-dev
+  role: arn:aws:iam::688283867202:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-dev-ou
+- account_id: '199343258706'
+  email: aws-csm-dev@exasol.com
+  name: aws-csm-dev
+  role: arn:aws:iam::199343258706:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-csm-ou
+- account_id: '861906706101'
+  email: aws-csm-prod@exasol.com
+  name: aws-csm-prod
+  role: arn:aws:iam::861906706101:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-csm-ou
+- account_id: '625364168731'
+  email: aws-csm-test@exasol.com
+  name: aws-csm-test
+  role: arn:aws:iam::625364168731:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-csm-ou
+- account_id: '751045563720'
+  email: aws-sa-test@exasol.com
+  name: aws-sa-test
+  role: arn:aws:iam::751045563720:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-sa-ou
+- account_id: 019789302664
+  email: aws-sa-prod@exasol.com
+  name: aws-sa-prod
+  role: arn:aws:iam::019789302664:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-sa-ou
+- account_id: '602024580880'
+  email: aws-sa-dev@exasol.com
+  name: aws-sa-dev
+  role: arn:aws:iam::602024580880:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-sa-ou
+#- account_id: '834606717668'
+#  email: admin@a.es.exasol.com
+#  name: a.es.exasol.com
+#  role: arn:aws:iam::834606717668:role/CloudCustodianAdminRole
+#  tags:
+#  - path:/Old Accounts
+#- account_id: '210221440067'
+#  email: marc.popp@exasol.com
+#  name: marc.popp@exasol.com
+#  role: arn:aws:iam::210221440067:role/CloudCustodianAdminRole
+#  tags:
+#  - path:/Old Accounts
+#- account_id: '367793703772'
+#  email: admin+amibuild@a.es.exasol.com
+#  name: Exasol AMI Build
+#  role: arn:aws:iam::367793703772:role/CloudCustodianAdminRole
+#  tags:
+#  - path:/Old Accounts
+- account_id: '533236019608'
+  email: aws-ops-test@exasol.com
+  name: aws-ops-test
+  role: arn:aws:iam::533236019608:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-ops-ou
+- account_id: '369094383710'
+  email: aws-ops-prod@exasol.com
+  name: aws-ops-prod
+  role: arn:aws:iam::369094383710:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-ops-ou
+- account_id: '187521479337'
+  email: aws-ops-dev@exasol.com
+  name: aws-ops-dev
+  role: arn:aws:iam::187521479337:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-ops-ou
+- account_id: '858956072909'
+  email: aws-im-prod@exasol.com
+  name: aws-im-prod
+  role: arn:aws:iam::858956072909:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-im-ou
+- account_id: '181933341095'
+  email: aws-im-test@exasol.com
+  name: aws-im-test
+  role: arn:aws:iam::181933341095:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-im-ou
+- account_id: '254541518849'
+  email: aws-im-dev@exasol.com
+  name: aws-im-dev
+  role: arn:aws:iam::254541518849:role/CloudCustodianAdminRole
+  tags:
+  - path:/aws-im-ou
